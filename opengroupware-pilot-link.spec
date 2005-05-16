@@ -26,12 +26,6 @@ BuildRequires:	perl-base
 BuildRequires:	pilot-link-devel
 BuildRequires:	postgresql-devel
 BuildRequires:	readline-devel >= 4.3
-# we don't want these
-#BuildRequires:	compat-libg++-2.7
-#BuildRequires:	libiconv-devel >= 1.9.2
-#AutoReqProv:	off
-# should be autodetected
-#Requires:	readline
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
