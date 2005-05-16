@@ -1,13 +1,15 @@
 # TODO: spec filename vs Name
-%define		pilot-link_makeflags	-w
+%define		datatrunk	200503150008
+
 Summary:	OGo Pilot link
 Summary(pl):	pilot-link dla OGo
 Name:		opengroupware.org-pilot-link
-Version:	1.0a
-Release:	8
+Version:	r98
+Release:	1
 License:	LGPL
 Group:		Libraries
-Source0:	http://download.opengroupware.org/sources/trunk/%{name}-trunk-latest.tar.gz
+Source0:	http://download.opengroupware.org/sources/trunk/%{name}-trunk-%{version}-%{datatrunk}.tar.gz
+# Source0-md5:	3ea5ea26d301e468565cf26aef9bcaea
 URL:		http://www.opengroupware.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -57,12 +59,12 @@ Pakiet programistyczny pilot-link dla opengroupware.org.
 %build
 . %{_libdir}/GNUstep/System/Library/Makefiles/GNUstep.sh
 %configure
-%{__make} %{pilot-link_makeflags} all
+%{__make} -w all
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} %{pilot-link_makeflags} install \
+%{__make} -w install \
 	INSTALL_ROOT_DIR=$RPM_BUILD_ROOT \
 	GNUSTEP_INSTALLATION_DIR=$RPM_BUILD_ROOT%{_prefix} \
 	FHS_INSTALL_ROOT=$RPM_BUILD_ROOT%{_prefix}
