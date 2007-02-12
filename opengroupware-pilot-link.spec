@@ -2,7 +2,7 @@
 %define		datatrunk	200508291711
 
 Summary:	OGo Pilot link
-Summary(pl):	pilot-link dla OGo
+Summary(pl.UTF-8):   pilot-link dla OGo
 Name:		opengroupware.org-pilot-link
 Version:	r124
 Release:	1
@@ -31,12 +31,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 OGo Pilot link.
 
-%description -l pl
+%description -l pl.UTF-8
 pilot-link dla OGo.
 
 %package devel
 Summary:	opengroupware.org pilot link devel
-Summary(pl):	Pakiet programistyczny pilot-link dla opengroupware.org
+Summary(pl.UTF-8):   Pakiet programistyczny pilot-link dla opengroupware.org
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnustep-make-devel
@@ -44,7 +44,7 @@ Requires:	gnustep-make-devel
 %description devel
 opengroupware.org pilot link devel package.
 
-%description devel -l pl
+%description devel -l pl.UTF-8
 Pakiet programistyczny pilot-link dla opengroupware.org.
 
 %prep
