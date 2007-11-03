@@ -21,7 +21,7 @@ BuildRequires:	libpng-devel >= 1.2.7
 BuildRequires:	libxml2-devel
 BuildRequires:	libxml2-progs
 BuildRequires:	ncurses-devel >= 5.4
-BuildRequires:	openldap-devel >= 2.2.17
+BuildRequires:	openldap-devel >= 2.4.6
 BuildRequires:	perl-base
 BuildRequires:	pilot-link-devel
 BuildRequires:	postgresql-devel
